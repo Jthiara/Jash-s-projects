@@ -1,0 +1,31 @@
+Jasharn Thiara
+TCSS 342
+Programming Assignment 3
+
+a. Which hash function are you using? and where did you get the hash function from? 
+(Cite the reference).
+
+The Hash function I used was to iterate through the string and create a sum of the ascii value * 41. Ex. Hash *= charAt(i) * 41. The resource I used was stack overflow 
+and it covered concepts of creating hashing functions when dealing with chars. Initially, I had done something very similar to my end result, but instead add together 
+the char sum instead of multiplying. Although this was creating errors and a much larger about of collisions. After changing the sum to multiply the chars together,
+I was finally able to get less collisions then the built in java hashcode. 
+https://stackoverflow.com/questions/2624192/good-hash-function-for-strings
+
+
+b. What are the advantages and disadvantages of Hashing? Give one application of 
+Hashing and give details about that application. 
+
+One advantage is that it is very efficient for storing data. Instead of iterating through a list for example, we have this reference of where the value will be and can
+retrieve it much easier. One disadvantage is that depending on the size of data and your hashing function you start to get even more collisions, and this will decrease the
+efficiency. One example could be a university storing names according to the first letter. Similar to this program, the key would be for example the letter "j" and 
+a list could be hashed onto that with names like "josh, joe, johnny..etc..". Since schools don't have hundreds of thousands of students, this would provide for a quick
+way to retrieve all names with a desired letter. 
+
+c. Amount of time you spent on implementing the assignment. Challenges you faced 
+while implementing the assignment? How did you overcome these challenges?
+
+-The amount of time I spent implenting the assignment was about 10 hours when accounting for rewatching lectures about hashing, researching online, and the
+coding itself. Challenges I faced was tracing the source of errors in my program. Since I have not worked with hashing functions, it was very challenging to 
+trace what was causing my hash map to enter infinite loops. Also, another challenge was trying to figure out a function that would create a hash table that is better than
+or atleast rivals the built in java hashcode. I overcame these challenges by going back and making sure the foundation of my code was working the way it should. Then I 
+created many testing samples that helped me discover what was causing these errors. 

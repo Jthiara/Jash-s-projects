@@ -1,0 +1,28 @@
+Jasharn Thiara
+TCSS 342
+FEBUARY 27, 2022
+
+a. Height of the Huffman Tree in terms of n, where n is the number of unique 
+characters in the string. Time Complexity of encode() and decode() methods 
+in terms of Big-O notation. 
+
+- the height of the huffman tree will be height = log2(n), similary to binary heaps because they are left adjusted. 
+-both encoding and decoding are also O(NlogN)
+
+b. What are the advantages and disadvantages of using Huffman Coding? Do you 
+think using a simple Queue (FIFO) implementation for Huffman encoding will 
+improve or deteriorate the compression ratio ?
+
+- The advantages are that we can store much more information in smaller bits and with huffman algorithim we can use less space.
+- One disadvantage is that Huffman coding can actually end up using more bits if there is a smaller frequency of the same characters.
+- I believe that it will deteriorate the compression ratio depending on frequency of certain bits. The priority queue allows for more efficient encoding and decoding because
+we can utilize the character frequencies we aree more interested in. 
+
+
+c. Amount of time you spent on implementing the assignment. Challenges you faced 
+while implementing the assignment? How did you overcome these challenges? 
+
+-The amount of time I spent on this assignment was about 15 hours with going over notes, researching online and actually trying to code the assignment. 
+-The biggest challenge I faced was putting together how all of these new concepts could be tied together for more efficient results. Another problem I had was trying to 
+implement multiple classes before realizing how exactly each part was supposed to function. I overcame these obstacles by trying to first visualize how all the aspects
+should work together to complete the program. I also had to rethink how to structure my classes.
